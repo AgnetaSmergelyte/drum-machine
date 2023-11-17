@@ -9,21 +9,18 @@ import ringOpenHH from "./sounds/Dsc_Oh.mp3";
 import ringKickNHat from "./sounds/Kick_n_Hat.mp3";
 import ringKick from "./sounds/RP4_KICK_1.mp3";
 import ringClosedHH from "./sounds/Cev_H2.mp3";
+const heater1 = new Audio(ring1);
+const heater2 = new Audio(ring2);
+const heater3 = new Audio(ring3);
+const heater4 = new Audio(ring4);
+const clap = new Audio(ringClap);
+const openHH = new Audio(ringOpenHH);
+const kickNHat = new Audio(ringKickNHat);
+const kick = new Audio(ringKick);
+const closedHH = new Audio(ringClosedHH);
 
 function App() {
-
     const [audioVolume, setVolume] = useState(0.3);
-
-    const heater1 = new Audio(ring1);
-    const heater2 = new Audio(ring2);
-    const heater3 = new Audio(ring3);
-    const heater4 = new Audio(ring4);
-    const clap = new Audio(ringClap);
-    const openHH = new Audio(ringOpenHH);
-    const kickNHat = new Audio(ringKickNHat);
-    const kick = new Audio(ringKick);
-    const closedHH = new Audio(ringClosedHH);
-
     const refQ = useRef();
     const refW = useRef();
     const refE = useRef();
